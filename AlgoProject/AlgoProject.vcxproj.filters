@@ -36,6 +36,12 @@
     <ClInclude Include="AdjListNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="minHeap.cpp">
@@ -51,6 +57,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WeightedGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Edge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MST.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

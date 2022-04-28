@@ -142,7 +142,9 @@
     <ClInclude Include="AdjList.h" />
     <ClInclude Include="AdjListNode.h" />
     <ClInclude Include="DisjointSets.h" />
+    <ClInclude Include="Edge.h" />
     <ClInclude Include="Element.h" />
+    <ClInclude Include="MST.h" />
     <ClInclude Include="minHeap.h" />
     <ClInclude Include="Pair.h" />
     <ClInclude Include="WeightedGraph.h" />
@@ -151,7 +153,9 @@
     <ClCompile Include="AdjList.cpp" />
     <ClCompile Include="AdjListNode.cpp" />
     <ClCompile Include="DisjointSets.cpp" />
+    <ClCompile Include="Edge.cpp" />
     <ClCompile Include="minHeap.cpp" />
+    <ClCompile Include="MST.cpp" />
     <ClCompile Include="WeightedGraph.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

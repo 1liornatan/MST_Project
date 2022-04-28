@@ -47,3 +47,8 @@ void WeightedGraph::removeEdge(int u, int v)
 	adjListArr[u]->remove(v);
 	adjListArr[v]->remove(u);
 }
+
+int WeightedGraph::getSize() const
+{
+	return size;
+}

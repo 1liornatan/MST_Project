@@ -18,4 +18,5 @@ public:
 	AdjList* getAdjlist(int u) const;
 	void addEdge(int u, int v, int c); // c = weight
 	void removeEdge(int u, int v);
+	int getSize() const;
 };
