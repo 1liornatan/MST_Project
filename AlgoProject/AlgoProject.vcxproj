@@ -141,20 +141,32 @@
   <ItemGroup>
     <ClInclude Include="AdjList.h" />
     <ClInclude Include="AdjListNode.h" />
+    <ClInclude Include="DFS.h" />
     <ClInclude Include="DisjointSets.h" />
     <ClInclude Include="Edge.h" />
     <ClInclude Include="Element.h" />
+    <ClInclude Include="PrimPair.h" />
+    <ClInclude Include="WeightKey.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="InputMismatch.h" />
     <ClInclude Include="MST.h" />
-    <ClInclude Include="minHeap.h" />
+    <ClInclude Include="MinHeap.h" />
+    <ClInclude Include="NoFileException.h" />
+    <ClInclude Include="NotConnectedException.h" />
     <ClInclude Include="Pair.h" />
     <ClInclude Include="WeightedGraph.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdjList.cpp" />
     <ClCompile Include="AdjListNode.cpp" />
+    <ClCompile Include="DFS.cpp" />
     <ClCompile Include="DisjointSets.cpp" />
     <ClCompile Include="Edge.cpp" />
-    <ClCompile Include="minHeap.cpp" />
+    <ClCompile Include="PrimPair.cpp" />
+    <ClCompile Include="WeightKey.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MinHeap.cpp" />
     <ClCompile Include="MST.cpp" />
     <ClCompile Include="WeightedGraph.cpp" />
   </ItemGroup>

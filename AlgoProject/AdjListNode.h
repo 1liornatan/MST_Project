@@ -1,12 +1,13 @@
 #pragma once
+#include "WeightKey.h"
 
 class AdjListNode {
 	AdjListNode* next;
 	int neighbor;
-	int edgeWeight;
+	WeightKey edgeWeight;
 
 public:
-	AdjListNode(int neighbor, int edgeWeight) {
+	AdjListNode(int neighbor, const WeightKey& edgeWeight) {
 		next = nullptr;
 		this->neighbor = neighbor;
 		this->edgeWeight = edgeWeight;
@@ -15,7 +16,7 @@ public:
 	void setEdgeWeight(int edgeWeight);
 	void setNeighbor(int neighbor);
 	int getNeighbor();
-	int getEdgeWeight();
+	WeightKey& getEdgeWeight();
 	AdjListNode* getNext();
 	void setNext(AdjListNode* node);
 };

@@ -15,7 +15,7 @@ int AdjListNode::getNeighbor()
 	return neighbor;
 }
 
-int AdjListNode::getEdgeWeight()
+WeightKey& AdjListNode::getEdgeWeight()
 {
 	return edgeWeight;
 }

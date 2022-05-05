@@ -10,7 +10,7 @@ int Edge::getU() const
     return u;
 }
 
-int Edge::getC() const
+WeightKey Edge::getC() const
 {
     return c;
 }

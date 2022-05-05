@@ -7,13 +7,13 @@ bool AdjList::isEmpty() const
 
 void AdjList::insert(AdjListNode* node)
 {
-	AdjListNode* currNode = head, *currNodeSaver;
+	AdjListNode* currNode = head, * currNodeSaver = head;
 	if (isEmpty())
 		head = node;
 	else {
 		while (currNode != nullptr) {
 			currNodeSaver = currNode;
-			currNode == currNode->getNext();
+			currNode = currNode->getNext();
 		}
 		currNodeSaver->setNext(node);
 	}
@@ -22,7 +22,7 @@ void AdjList::insert(AdjListNode* node)
 void AdjList::remove(AdjListNode* node)
 {
 	AdjListNode* currNode = head;
-	AdjListNode* currNodeSaver;
+	AdjListNode* currNodeSaver = head;
 
 	if (node == nullptr)
 		return;
@@ -52,6 +52,7 @@ void AdjList::remove(int v) {
 			remove(currNode);
 			break;
 		}
+		currNode = currNode->getNext();
 	}
 }
 

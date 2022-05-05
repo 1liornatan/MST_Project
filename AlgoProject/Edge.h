@@ -1,17 +1,20 @@
 #pragma once
 
 #include <iostream>
+#include "WeightKey.h"
 
 class Edge {
-	int v, u, c;
+	int v, u;
+
+	WeightKey c;
 
 public:
 	
-	Edge(int _v, int _u, int _c) : v(_v), u(_u), c(_c) {};
+	Edge(int _u, int _v, const WeightKey & _c) : v(_v), u(_u), c(_c) {};
 
 	int getV() const;
 	int getU() const;
-	int getC() const;
+	WeightKey getC() const;
 	void setV(int v);
 	void setU(int u);
 	void setC(int c);
