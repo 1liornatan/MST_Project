@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include <stdlib.h>
 #include <fstream>
 #include "InputMismatch.h"
 #include "NoFileException.h"
