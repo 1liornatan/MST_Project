@@ -15,8 +15,8 @@ public:
 
 	void setEdgeWeight(int edgeWeight);
 	void setNeighbor(int neighbor);
-	int getNeighbor();
+	int getNeighbor() const;
 	WeightKey& getEdgeWeight();
-	AdjListNode* getNext();
+	AdjListNode* getNext() const;
 	void setNext(AdjListNode* node);
 };

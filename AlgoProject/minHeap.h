@@ -20,8 +20,11 @@ public:
 	}
 
 	~MinHeap() {
-	//	delete[] pairArr;
-		delete posArr;
+		if(posArr)
+			delete posArr;
+
+		if(pairArr)
+			delete pairArr;
 	}
 
 	MinHeap& operator=(const MinHeap& p) = delete;
@@ -38,8 +41,8 @@ private:
 	void empty();
 	void FixHeap(int node);
 	void FixHeapUp(int node);
-	int Parent(int child);
-	int Left(int parent);
-	int Right(int parent);
+	int Parent(int child) const;
+	int Left(int parent) const;
+	int Right(int parent) const;
 	void Swap(int i, int j);
 };

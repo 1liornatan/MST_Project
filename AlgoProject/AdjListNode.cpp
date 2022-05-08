@@ -10,7 +10,7 @@ void AdjListNode::setNeighbor(int neighbor)
 	this->neighbor = neighbor;
 }
 
-int AdjListNode::getNeighbor()
+int AdjListNode::getNeighbor() const
 {
 	return neighbor;
 }
@@ -20,7 +20,7 @@ WeightKey& AdjListNode::getEdgeWeight()
 	return edgeWeight;
 }
 
-AdjListNode* AdjListNode::getNext()
+AdjListNode* AdjListNode::getNext() const
 {
 	return next;
 }

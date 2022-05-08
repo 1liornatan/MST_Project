@@ -23,14 +23,14 @@ void InputManager::start()
 
 		G.makeEmptyGraph(n);
 
-		getEdges();
+		getInputEdges();
 
 		kruskalArr = MST::Kruskal(G);
 		primPair = MST::Prim(G);
 
-		std::cout << "Kruskal <" << MST::sumMST(kruskalArr) << '>' << std::endl;
+		std::cout << "Kruskal " << MST::sumMST(kruskalArr) << std::endl;
 		
-		std::cout << "Prim <" << MST::sumMST(primPair, n) << '>' << std::endl;
+		std::cout << "Prim " << MST::sumMST(primPair, n) << std::endl;
 
 		u = getInt();
 		v = getInt();
@@ -39,9 +39,7 @@ void InputManager::start()
 
 		kruskalArr = MST::KruskalIteration(G);
 
-		std::cout << "Kruskal <" << MST::sumMST(kruskalArr) << '>' << std::endl;
-
-		//TODO: delete memory
+		std::cout << "Kruskal " << MST::sumMST(kruskalArr) << std::endl;
 
 		delete kruskalArr;
 		delete primPair;
@@ -52,7 +50,7 @@ void InputManager::start()
 	}
 }
 
-void InputManager::getEdges()
+void InputManager::getInputEdges()
 {
 	int u, v, c, m, n;
 

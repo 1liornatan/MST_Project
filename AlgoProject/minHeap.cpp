@@ -56,15 +56,15 @@ void MinHeap::DecreaseKey(int place, int newKey)
 	pairArr[pos]->key = newKey;
 	FixHeapUp(pos);
 }
-int MinHeap::Parent(int child) {
+int MinHeap::Parent(int child) const {
 	return (child - 1) / 2;
 }
 
-int MinHeap::Left(int parent) {
+int MinHeap::Left(int parent) const {
 	return (parent * 2 + 1);
 }
 
-int MinHeap::Right(int parent) {
+int MinHeap::Right(int parent) const {
 	return (parent * 2 + 2);
 }
 

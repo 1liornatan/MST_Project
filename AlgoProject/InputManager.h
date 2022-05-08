@@ -29,7 +29,7 @@ public:
 
 	int getInt();
 	void start();
-	void getEdges();
+	void getInputEdges();
 
 	InputManager operator=(const InputManager& a) = delete;
 };
